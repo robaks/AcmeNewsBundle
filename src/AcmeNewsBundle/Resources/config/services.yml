@@ -3,7 +3,7 @@ services:
       class: Doctrine\ORM\EntityRepository
       factory: ["@doctrine.orm.default_entity_manager", getRepository]
       arguments:
-          - AcmeNewsBundle\Entities\News
+          - AcmeNewsBundle\Entity\News
 
   acme.news.service:
     class: AcmeNewsBundle\Services\NewsService

@@ -1,6 +1,6 @@
 <?php
 
-namespace AcmeNewsBundle\Entities;
+namespace AcmeNewsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

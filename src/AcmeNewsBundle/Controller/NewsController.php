@@ -2,7 +2,7 @@
 
 namespace AcmeNewsBundle\Controller;
 
-use AcmeNewsBundle\Entities\News;
+use AcmeNewsBundle\Entity\News;
 use AcmeNewsBundle\Services\NewsService;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
