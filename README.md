@@ -8,4 +8,5 @@ Installation
 * `git clone https://github.com/robaks/AcmeNewsBundle.git ./AcmeNewsBundle`
 * `cd AcmeNewsBundle`
 * `composer install -n`
-* Configure db
+* Create in mysql user: name - "news", pass - "admin123"
+* 
