@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    {% for page in news %}
+        <item id="{{ page.id }}" date="{{ page.createdAt|date("Y-m-d H:i:s") }}">
+            <announce>{{ page.description }}</announce>
+            <description>{{ page.body }}</description>
+        </item>
+    {% else %}
+        <item>
+            <description>No news have been found.</description>
+        </item>
+    {% endfor %}
+</list>

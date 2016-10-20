@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="status">News list:</div>
+            {{ include(':default:newsListBlock.html.twig', {'news': news}) }}
+        </div>
+
+        {{ render(controller('AcmeNewsBundle:News:hot')) }}
+    </div>
+{% endblock %}

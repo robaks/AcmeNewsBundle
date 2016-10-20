@@ -1,0 +1,10 @@
+app:
+    resource: "@AcmeNewsBundle/Controller/"
+    type: annotation
+
+root:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: news_list
+        permanent: true

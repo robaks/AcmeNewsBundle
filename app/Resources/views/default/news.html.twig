@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div>
+                <div class="news-title">{{ news.description|raw }}</div>
+                <div class="news-date space-bottom">{{ news.createdAt|date("Y-m-d H:i:s") }}</div>
+                <div>{{ news.body|raw }}</div>
+            </div>
+            <div>
+                <a href="{{ path('news_list') }}">Back to news list</a>
+            </div>
+        </div>
+
+        {{ render(controller('AcmeNewsBundle:News:hot')) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% for page in news %}
+    <div id="news-block">
+        <div>{{ page.description|raw }}</div>
+        <div class="row">
+            <div class="news-date cl-3 left">
+                {{ page.createdAt|date("Y-m-d H:i:s") }}
+            </div>
+            <div class="news-link">
+                <a href="{{ path('show_news', {'id': page.id}) }}">See more</a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div>No news have been found.</div>
+{% endfor %}

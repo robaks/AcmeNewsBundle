@@ -1,0 +1,13 @@
+parameters:
+    database_host: localhost
+    database_port: 3306
+    database_name: pages
+    database_user: pages
+    database_password: admin123
+
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: ~
+    mailer_password: ~
+
+    secret: ThisTokenIsNotSoSecretChangeIt
